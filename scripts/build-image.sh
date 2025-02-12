@@ -12,7 +12,7 @@
 #
 
 set -u # or set -o nounset
-: "$CONTAINER_REGISTRY"
-: "$VERSION"
+: "flixtubepakorn.azurecr.io"
+: "1"
 
 docker build -t $CONTAINER_REGISTRY/video-streaming:$VERSION --file ./Dockerfile-prod .
